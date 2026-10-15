@@ -1,0 +1,21 @@
+# Project TODO
+
+- [x] Inspect the current dashboard routes, components, database schema, and existing CSV/export actions.
+- [x] Replace the create-offer image URL input with a managed image upload that persists an image reference with the offer.
+- [x] Persist offers, customers, CSV imports, and dashboard statistics so the interface contains no hardcoded business data.
+- [x] Verify the query-backed context has no sample-data fallback and remove remaining hardcoded workspace-specific dashboard copy.
+- [x] Add CSV import parsing with a complete import record and an accessible row-level view that displays emails and phone numbers.
+- [x] Add an industry field to new-customer creation and CSV import mapping, and make it available for customer segmentation.
+- [x] Add a Profile tab for viewing and updating the signed-in user's personal information.
+- [x] Make each export action download the relevant live data as a correctly formatted CSV file.
+- [x] Add and run focused Vitest coverage for data parsing, export formatting, and core procedures.
+- [x] Verify desktop and mobile dashboard rendering, then create a published checkpoint.
+- [x] Add procedure-level validation coverage for the new CSV import, personal profile, and offer image upload APIs.
+- [x] Add procedure-level coverage for the personal profile read fallback.
+- [x] Run the final verification and create a published checkpoint with the completed update.
+- [x] Inspect available Vercel access and external-hosting requirements for the Launchr project.
+- [x] Prepare and verify a Vercel-compatible deployment configuration without disrupting the existing live deployment.
+- [x] Complete the Vercel deployment or provide the exact account step required to finish it.
+- [x] Verify the newly authorized Vercel connection and identify the available deployment controls.
+- [x] Add a Vercel-compatible serverless API entry and Vite static-routing configuration for external hosting.
+- [x] Bundle the Vercel function entry so its Express dependencies are included at runtime, then verify the API route responds.

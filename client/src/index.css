@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.09 0.012 155);
+  --foreground: oklch(0.96 0.01 155);
+  --card: oklch(0.13 0.014 155);
+  --card-foreground: oklch(0.96 0.01 155);
+  --popover: oklch(0.13 0.014 155);
+  --popover-foreground: oklch(0.96 0.01 155);
+  --primary: oklch(0.68 0.18 149);
+  --primary-foreground: oklch(0.12 0.03 150);
+  --secondary: oklch(0.18 0.015 155);
+  --secondary-foreground: oklch(0.96 0.01 155);
+  --muted: oklch(0.18 0.014 155);
+  --muted-foreground: oklch(0.67 0.014 155);
+  --accent: oklch(0.2 0.018 155);
+  --accent-foreground: oklch(0.96 0.01 155);
+  --destructive: oklch(0.62 0.21 25);
+  --destructive-foreground: oklch(0.98 0.01 20);
+  --border: oklch(0.23 0.014 155);
+  --input: oklch(0.23 0.014 155);
+  --ring: oklch(0.68 0.18 149);
+  --radius: 0.8rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+* { border-color: var(--border); }
+html { background: #070b0a; }
+body { min-width: 320px; background: #070b0a; color: #f2f5f3; font-family: "DM Sans", ui-sans-serif, system-ui, sans-serif; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+::selection { background: rgba(29,185,84,.28); }
+
+@media (prefers-reduced-motion: no-preference) {
+  * { scroll-behavior: smooth; }
+}

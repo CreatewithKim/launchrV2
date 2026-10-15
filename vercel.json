@@ -1,0 +1,25 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm ci --legacy-peer-deps",
+  "buildCommand": "npm run db:migrate && npm run build",
+  "outputDirectory": "dist/public",
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/**"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/manus-storage/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

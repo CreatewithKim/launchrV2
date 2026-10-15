@@ -1,0 +1,25 @@
+# Project TODO
+
+- [x] Define the Spotify-inspired dark visual system with the #1DB954 accent color and responsive interaction rules.
+- [x] Build the persistent DashboardLayout sidebar with links and active states for Dashboard, Customers, Offers, Campaigns, Leads, Analytics, and Settings.
+- [x] Implement the Dashboard overview with five requested performance stat cards and campaign activity context.
+- [x] Implement the Customers table with segment tabs, search, add, edit, delete, and CSV-import user flows.
+- [x] Implement the Offers grid and Create Offer form with title, description, type, image URL, CTA, dates, and status states.
+- [x] Implement the Campaigns list and multi-step Create Campaign flow for offer, audience, timing, and launch selections.
+- [x] Implement the Leads workspace with grouped statuses, inline status changes, and per-lead notes editing.
+- [x] Implement the Analytics campaign-performance table with sent, delivered, read, replies, and lead metrics.
+- [x] Implement the Settings business-profile form with logo upload field and contact details.
+- [x] Define Drizzle ORM tables for customers, offers, campaigns, leads, analytics metrics, and business settings.
+- [x] Implement tRPC procedures and database helpers for core CRUD and dashboard data retrieval.
+- [x] Add unit tests for the core data transformation and status-validation behavior.
+- [x] Run database migration, type checks, tests, and visual verification at desktop and mobile widths.
+- [x] Save a completion checkpoint after all project TODO items are verified.
+- [x] Ensure the persistent sidebar collapses into an accessible mobile navigation drawer at small viewport widths.
+- [x] Replace authenticated empty data blanks and demo-only activity panels with useful first-run empty states.
+- [x] Replace the dashboard momentum and next-delivery modules with persisted campaign data and first-run empty states.
+- [x] Fix the authenticated settings query so it always returns a defined profile result when no saved settings row exists.
+- [x] Add regression coverage for a defined initial settings query response and verify the dashboard has no query errors.
+- [x] Enable trust proxy in the Express app for correct protocol and cookie handling behind Vercel's load balancers.
+- [x] Refine cookie security logic to ensure seamless authentication and storage proxying on Vercel.
+- [x] Verify Vercel build script and API entry points for serverless function deployment.
+- [x] Document required Vercel environment variables for the user to ensure parity.

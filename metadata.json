@@ -1,0 +1,6 @@
+{
+  "name": "Launchr",
+  "description": "AI-powered customer acquisition workspace: find targeted prospects, personalize and dispatch outreach, automate smart follow-ups, manage conversations, and convert prospects into high-value leads.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
